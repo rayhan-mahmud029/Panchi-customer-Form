@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panchi // The Best Restaurant in Sylhet</title>
+
+    <style>
+        *{
+            padding: 0px;
+            margin: 0;
+        }
+        main{
+            background-color: rgb(166, 204, 242);
+            padding: 20px;
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 1.5rem;            
+        }
+        form{
+            width: 80%;
+            height: 1000px;
+            margin: auto;
+            background-image: url('./assets/images/panchi.png');
+            background-size: cover;
+            background-color: rgb(172, 172, 172);
+            background-blend-mode: multiply;
+            border: 1px solid grey;
+            border-radius: 15px;
+            display: block;
+            box-shadow: -2px -2px 22px 2px purple;
+        }
+        form label{
+            display: block;
+            /* margin: 30px 0px 10px 0px; */
+            padding: 10px;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: 700;
+            font-size: 1.3rem;
+            color: white;
+        }
+        input{
+            padding: 10px 15px;
+            font-family: 'Courier New', Courier, monospace;
+            width: 50%;
+            border-radius: 5px;
+            border: 2px double red;
+        }
+        fieldset {
+            text-align: left;
+            margin: 15px;
+            border: 2px double red;
+            padding: 20px;
+        }
+        fieldset input{
+            /* padding: 5px; */
+            width: 20%;
+        }
+        form legend{
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: white;
+            font-family: 'Courier New', Courier, monospace;
+            padding: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Welcome to Panchi Restaurant</h1>
+    
+    <section class="customer-form">
+        <form>
+            <label for="name">Sir, What's your name? </label>
+            <input type="text" name="name" placeholder="Enter your name: ">
+            <label for="Number">Mobile Number: </label>
+            <input type="number" name="number" placeholder="Enter your number: ">
+
+           
+            <fieldset><legend>Your seat no.:</legend>
+          <label>  <input type="radio" name="seat" id="b1">B1</label>
+          <label>  <input type="radio" name="seat" id="b2">B2</label>
+          <label>  <input type="radio" name="seat" id="b3">B3</label>
+          <label>  <input type="radio" name="seat" id="b4">B4</label>
+            </fieldset>
+
+            <fieldset><legend>Choose your items:</legend>
+                <label for="item"><input type="checkbox" name="item" id="Parata">Parata</label>
+                <label for="item"><input type="checkbox" name="item" id="Nan">Nan</label>
+                <label for="item"><input type="checkbox" name="item" id="Grilled Chicken">Grilled Chicken</label>
+                <label for="item"><input type="checkbox" name="item" id="Pasta">Pasta</label>
+            </fieldset>
+
+            <fieldset> <legend>Any instruction..:</legend>
+
+                <label for="instruction"><textarea name="instruction" id="instruction" cols="100" rows="8"></textarea></label>
+            </fieldset>
+        </form>
+    </section>
+    </main>
+</body>
+</html>
